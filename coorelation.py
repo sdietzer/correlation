@@ -1,4 +1,4 @@
-#Yahoo finance script that plots the coorelation between coins
+# Yahoo finance Python script that plots the coorelation between coins
 # Analyzing Cryptocurrencies in Python
 # NeuralNine Youtube Channel
 # https://www.youtube.com/watch?v=HqGlkACB3rg
@@ -6,7 +6,7 @@
 import pandas_datareader as web
 import matplotlib.pyplot as plt
 import mplfinance as mpf
-#import yfinance as yf
+import yfinance as yf
 import seaborn as sns
 import datetime as dt  
 
