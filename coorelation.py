@@ -1,6 +1,6 @@
-# References
-# Yahoo finance Python script that plots the coorelation between coins
-# Analyzing Cryptocurrencies in Python by NeuralNine https://www.youtube.com/watch?v=HqGlkACB3rg
+#References
+#Yahoo finance python script that plots the coorelation between coins
+#Analyzing cryptocurrencies in python by NeuralNine https://www.youtube.com/watch?v=HqGlkACB3rg
 
 import pandas_datareader as web
 import matplotlib.pyplot as plt
@@ -14,7 +14,6 @@ metric = "Close"
 
 start = dt.datetime(2019, 1, 1)
 end = dt.datetime.now()
-
 
 crypto = ['BTC', 'ETH', 'HEX', 'ANC', 'TERRA']
 colnames = []
@@ -47,7 +46,7 @@ plt.legend(loc="upper right")
 combined = combined.pct_change().corr(method="pearson")
 sns.heatmap(combined, annot=True, cmap="coolwarm")
 
-
+#PLOT GRAPHS
 plt.show()
 
 
